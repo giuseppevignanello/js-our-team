@@ -52,6 +52,10 @@ const team = [
 
 // MILESTONE 1
 //console.log the keys and values of each object with a for loop
+for (let key in team) {
+    console.log(key, team[key]);
+}
+
 
 //MILESTONE 2
 // Take an element from the DOM
