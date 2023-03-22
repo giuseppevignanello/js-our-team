@@ -1,0 +1,10 @@
+#app_header {
+    height: 10vh;
+    width: 100%;
+    position: sticky; 
+    top: 0;
+    left: 0;
+    background-color: #d84761;
+    z-index: 1000;
+
+}
