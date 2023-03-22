@@ -19,32 +19,32 @@
 const team = [
     {
         name: "Wayne Barnett",
-        role: "Founder & CEO", 
+        role: "Founder & CEO",
         img: "wayne-barnett-founder-ceo.jpg"
     },
     {
         name: "Angela Caroll",
-        role: "Chief Editor", 
+        role: "Chief Editor",
         img: "angela-caroll-chief-editor.jpg"
     },
     {
         name: "Walter Gordon",
-        role: "Office Manager", 
+        role: "Office Manager",
         img: "walter-gordon-office-manager.jpg"
     },
     {
         name: "Angela Lopez",
-        role: "Social Media Manager", 
+        role: "Social Media Manager",
         img: "angela-lopez-social-media-manager.jpg"
     },
     {
         name: "Scott Estrada",
-        role: "Developer", 
+        role: "Developer",
         img: "scott-estrada-developer.jpg"
     },
     {
         name: "Barbara Ramos",
-        role: "Graphic Designer", 
+        role: "Graphic Designer",
         img: "barbara-ramos-graphic-designer.jpg"
     },
 
@@ -60,6 +60,7 @@ for (let key in team) {
 //MILESTONE 2
 // Take an element from the DOM
 const containerEl = document.querySelector(".container");
+const rowEl = document.querySelector(".row")
 //inner the keys and values of each object with for loop and templete literal
 // for (i=0; i < team.length; i++ ) {
 //     const thisMember = team[i]; 
@@ -72,11 +73,22 @@ const containerEl = document.querySelector(".container");
 // BONUS 1
 // add img element with for loop inner html and template literal
 
-for (i=0; i < team.length; i++ ) {
-    const thisMember = team[i]; 
-    const info = `<img src="./assets/img/${thisMember.img}" alt=""> ${thisMember.name}, ${thisMember.role} <br> `
+for (i = 0; i < team.length; i++) {
+    const thisMember = team[i];
+    const info = `<div class="col-4">
+    <div class="card mb-4">
+        <img class="card-img-top" src="./assets/img/${thisMember.img}" alt="">
+        <h3 class="text-center">
+        ${thisMember.name}
+        </h3>
+        <h6 class="text-center">
+        ${thisMember.role}
+        </h6>
+        
+    </div>
+</div> `
 
-    containerEl.innerHTML += info
+    rowEl.innerHTML += info
 
 }
 //BONUS 2
