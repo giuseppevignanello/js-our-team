@@ -12,3 +12,21 @@
 // Trasformare la stringa foto in una immagine effettiva
 // BONUS 2:
 // Organizzare i singoli membri in card/schede
+
+
+// MILESTONE 0
+// Create an array with six objects insiede
+
+
+// MILESTONE 1
+//console.log the keys and values of each object with a for loop 
+
+//MILESTONE 2 
+// Take an element from the DOM 
+//inner the keys and values of each object with for loop and templete literal 
+
+// BONUS 1 
+// add img element with for loop inner html and template literal 
+
+//BONUS 2 
+// add complete HTML with for loop, inner HTML and template literl 
