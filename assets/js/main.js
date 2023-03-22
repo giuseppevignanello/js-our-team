@@ -61,16 +61,23 @@ for (let key in team) {
 // Take an element from the DOM
 const containerEl = document.querySelector(".container");
 //inner the keys and values of each object with for loop and templete literal
-for (i=0; i < team.length; i++ ) {
-    const thisMember = team[i]; 
-    const info = `${thisMember.name}, ${thisMember.role}, ${thisMember.img} <br> `
+// for (i=0; i < team.length; i++ ) {
+//     const thisMember = team[i]; 
+//     const info = `${thisMember.name}, ${thisMember.role}, ${thisMember.img} <br> `
 
-    containerEl.innerHTML += info
+//     containerEl.innerHTML += info
 
-}
+// }
 
 // BONUS 1
 // add img element with for loop inner html and template literal
 
+for (i=0; i < team.length; i++ ) {
+    const thisMember = team[i]; 
+    const info = `<img src="./assets/img/${thisMember.img}" alt=""> ${thisMember.name}, ${thisMember.role} <br> `
+
+    containerEl.innerHTML += info
+
+}
 //BONUS 2
 // add complete HTML with for loop, inner HTML and template literl 
